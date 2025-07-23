@@ -46,6 +46,7 @@ Energy distribution is a challenging problem due to the increasing demand and li
   - Total demand ≤ supplied energy  
   - Source and node capacity limits  
 
+---
 
 ## 🧪 Chromosome Encoding
 
@@ -57,8 +58,9 @@ Where:
 - `Eij` = Energy from source `i` to node `j`
 
 
+---
 
-📊 Fitness Function
+## 📊 Fitness Function
 
 python
 fitness = alpha * (1 - total_loss/maximum_possible_loss) + 
@@ -66,7 +68,9 @@ fitness = alpha * (1 - total_loss/maximum_possible_loss) +
           gamma * (total_cost / maximum_cost)
 Tunable weights alpha, beta, gamma balance priorities
 
-🚀 How to Run
+---
+
+## 🚀 How to Run
 1. Clone the Repository
 git clone [https://github.com/Sushant2080-0140/MLPC-Group]
 2. Install Dependencies
@@ -75,29 +79,39 @@ pip install numpy matplotlib pygad psutil
 3. Launch the Notebook
 jupyter notebook MLPC_Group_Assignment.ipynb
 
-🖥️ CPU Usage Monitoring
+---
+
+## 🖥️ CPU Usage Monitoring
 The notebook includes CPU monitoring functions using the psutil library:
 Tracks usage during GA execution
 Plots CPU usage over time
 Helps compare serial vs parallel efficiency
 
-📈 Output Visualization
+---
+
+## 📈 Output Visualization
 Fitness over generations
 Allocation heatmaps
 CPU usage plots
 Performance comparison charts
 
-🧠 Potential Enhancements
+---
+
+## 🧠 Potential Enhancements
 Implement multiprocessing-based parallel GA
 Integrate real-world energy demand datasets (e.g., NEA data)
 Add GUI for real-time simulation
 Run on HPC or cloud environments
 
-👨‍💻 Author
+---
+
+## 👨‍💻 Author
 Member of LG3_Group 1
 BCS(Hons) Students | IIMS College
 
-🙌 Acknowledgements
+---
+
+## 🙌 Acknowledgements
 PyGAD – Genetic Algorithm library for Python
 psutil – System monitoring
 Energy optimization research papers and real-world grid data
